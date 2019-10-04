@@ -1,0 +1,10 @@
+// Reset
+@import 'reset-css/_reset';
+// Dependencies
+@import 'dependencies/variables';
+@import 'dependencies/animations';
+@import 'dependencies/mixins';
+// Global
+@import 'global/base';
+// Pages
+@import 'pages/home';
