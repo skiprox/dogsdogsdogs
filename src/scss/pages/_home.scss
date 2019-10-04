@@ -20,9 +20,9 @@
     .ticker-text {
         font-family: $font-serif;
         font-weight: 800;
-        letter-spacing: 24px;
-        font-size: 8vw;
-        text-shadow: 6px 6px 2px rgba(66, 66, 66, 0.8);
+        letter-spacing: 12px;
+        font-size: 58px;
+        text-shadow: 3px 3px 2px rgba(66, 66, 66, 0.8);
         text-align: center;
         color: $green;
         line-height: 1;
@@ -33,5 +33,16 @@
         width: 100%;
         transform: translateX(-100%);
         animation: ticker 25s linear infinite;
+        @include viewport(md) {
+            font-size: 42px;
+            letter-spacing: 8px;
+            animation: ticker 20s linear infinite;
+        }
+        @include viewport(sm) {
+            font-size: 18px;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.8);
+            animation: ticker 15s linear infinite;
+        }
     }
 }
