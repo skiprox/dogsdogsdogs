@@ -12,5 +12,5 @@ npm install
 and then 
 
 ```
-gulp
+npm run start
 ```
