@@ -1,48 +1,44 @@
 .home {
-    height: 100vh;
-    background: url('images/dogs.png');
-    background-size: cover;
-    background-position: center center;
-}
-.ticker {
-    background-color: transparent;
-    margin-bottom: 400px;
-    width: 100%;
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-    @include viewport(md) {
-        margin-bottom: 120px;
-    }
-    @include viewport(sm) {
-        margin-bottom: 60px;
-    }
-    .ticker-text {
-        font-family: $font-serif;
-        font-weight: 800;
-        letter-spacing: 12px;
-        font-size: 58px;
-        text-shadow: 3px 3px 2px rgba(66, 66, 66, 0.8);
-        text-align: center;
-        color: $green;
-        line-height: 1;
-        display: inline-block;
-        padding: 0;
-        @include fluid-value(padding-top, 20px, 40px);
-        @include fluid-value(padding-bottom, 20px, 40px);
+    .ticker {
+        background-color: transparent;
+        margin-bottom: 400px;
         width: 100%;
-        transform: translateX(-100%);
-        animation: ticker 25s linear infinite;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
         @include viewport(md) {
-            font-size: 42px;
-            letter-spacing: 8px;
-            animation: ticker 20s linear infinite;
+            margin-bottom: 120px;
         }
         @include viewport(sm) {
-            font-size: 16px;
-            letter-spacing: 6px;
-            text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.8);
-            animation: ticker 15s linear infinite;
+            margin-bottom: 60px;
+        }
+        .ticker-text {
+            font-family: $font-serif;
+            font-weight: 800;
+            letter-spacing: 12px;
+            font-size: 58px;
+            text-shadow: 3px 3px 2px rgba(66, 66, 66, 0.8);
+            text-align: center;
+            color: $green;
+            line-height: 1;
+            display: inline-block;
+            padding: 0;
+            @include fluid-value(padding-top, 20px, 40px);
+            @include fluid-value(padding-bottom, 20px, 40px);
+            width: 100%;
+            transform: translateX(-100%);
+            animation: ticker 25s linear infinite;
+            @include viewport(md) {
+                font-size: 42px;
+                letter-spacing: 8px;
+                animation: ticker 20s linear infinite;
+            }
+            @include viewport(sm) {
+                font-size: 16px;
+                letter-spacing: 6px;
+                text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.8);
+                animation: ticker 15s linear infinite;
+            }
         }
     }
 }

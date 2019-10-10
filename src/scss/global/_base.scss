@@ -1,5 +1,8 @@
 html{
-
-cursor: url(images/pawpee.png), auto;
-
+    cursor: url(images/pawpee.png), auto;
+    min-height: 100vh;
+    background: url('images/dogs.png');
+    background-size: cover;
+    background-position: center center;
+    font-family: $font;
 }
