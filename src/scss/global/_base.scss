@@ -6,3 +6,108 @@ html{
     background-position: center center;
     font-family: $font;
 }
+a {
+    &:hover {
+        cursor: pointer;
+    }
+}
+.navigation {
+    height: 0;
+}
+.nav-links {
+    .link {
+        width: 200px;
+        height: 312px;
+        display: block;
+        cursor: hover;
+        &.about {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url('images/petme-left.png');
+            background-size: 100% auto;
+            &:hover {
+                background-image: url('images/link-about.png');
+            }
+        }
+        &.forms {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url('images/petme-right.png');
+            background-size: 100% auto;
+            &:hover {
+                background-image: url('images/link-forms.png');
+            }
+        }
+    }
+}
+.ticker {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+    }
+    @include viewport(md) {
+        margin-bottom: 120px;
+    }
+    @include viewport(sm) {
+        margin-bottom: 60px;
+    }
+    .ticker-text {
+        font-family: $font-serif;
+        font-weight: 800;
+        letter-spacing: 12px;
+        font-size: 58px;
+        text-shadow: 3px 3px 2px rgba(66, 66, 66, 0.8);
+        text-align: center;
+        color: $green;
+        line-height: 1;
+        display: inline-block;
+        padding: 0;
+        @include fluid-value(padding-top, 20px, 40px);
+        @include fluid-value(padding-bottom, 20px, 40px);
+        width: 100%;
+        transform: translateX(-100%);
+        animation: ticker 25s linear infinite;
+        @include viewport(md) {
+            font-size: 42px;
+            letter-spacing: 8px;
+            animation: ticker 20s linear infinite;
+        }
+        @include viewport(sm) {
+            font-size: 16px;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.8);
+            animation: ticker 15s linear infinite;
+        }
+    }
+}
+.container {
+    width: 600px;
+    display: block;
+    margin: 3em auto;
+    background-color: #fff;
+    padding: 2em;
+    font-size: 18px;
+    line-height: 1.4;
+    box-shadow: 2px 4px 16px #222;
+    border: 12px dotted $green;
+    h3 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    * + p, * + h3 {
+        margin-top: 1em;
+    }
+}
+.form-list {
+    .form + .form {
+        margin-top: 1em;
+    }
+}

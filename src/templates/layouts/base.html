@@ -14,9 +14,24 @@
 </head>
 <body class="{{ pageClass }}">
     <div style="width:0;height:0;display:none">{% include "icons.svg" ignore missing %}</div>
-        {% block content %}
-            <h1>Base template content.</h1>
-        {% endblock %}
+    <nav class="navigation">
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="/about" class="link about"></a>
+            </li>
+            <li class="nav-item">
+                <a href="/forms" class="link forms"></a>
+            </li>
+        </ul>
+    </nav>
+    <a href="/" class="ticker">
+        <span class="ticker-text">d.o.g.s d.o.g.s d.o.g.s dot net</span>
+        <span class="ticker-text">d.o.g.s d.o.g.s d.o.g.s dot net</span>
+        <span class="ticker-text">d.o.g.s d.o.g.s d.o.g.s dot fart</span>
+    </a>
+    {% block content %}
+        <h1>Base template content.</h1>
+    {% endblock %}
 
 
 </body>
