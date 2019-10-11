@@ -71,7 +71,7 @@ a {
         margin-bottom: 60px;
     }
     .ticker-text {
-        font-family:'Underdog', cursive;
+        font-family: $font-serif;
         font-weight: 800;
         letter-spacing: 12px;
         font-size: 58px;
@@ -109,7 +109,7 @@ a {
     font-size: 18px;
     line-height: 1.4;
     box-shadow: 2px 4px 16px #222;
-    border: 12px dotted $green;
+    border: 12px dashed $green;
     box-sizing: border-box;
     h3 {
         font-weight: bold;
