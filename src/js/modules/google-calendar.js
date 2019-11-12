@@ -88,7 +88,7 @@ const formatGoogleCalendar = (() => {
     const init = (settings) => {
         config = settings;
 
-        var finalURL = settings.calendarUrl;
+        var finalURL = settings.calendarUrl + `?key=${key}`;
 
         if (settings.recurringEvents) {
             //finalURL = finalURL.concat('&singleEvents=true&orderBy=starttime');
@@ -406,7 +406,7 @@ const formatGoogleCalendar = (() => {
     return { 
         init: function (settingsOverride) {
             var settings = {
-                calendarUrl: `https://www.googleapis.com/calendar/v3/calendars/milan.kacurak@gmail.com/events?key=${key}`,
+                calendarUrl: `https://www.googleapis.com/calendar/v3/calendars/milan.kacurak@gmail.com/events`,
                 past: true,
                 upcoming: true,
                 sameDayTimes: true,
@@ -429,6 +429,6 @@ const formatGoogleCalendar = (() => {
             init(settings);
         }
     };
-});
+})();
 
 module.exports = formatGoogleCalendar;
