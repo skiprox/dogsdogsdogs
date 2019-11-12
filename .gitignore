@@ -106,3 +106,4 @@ dist/
 .dmp/
 deploy.sh
 deploy-without-build.sh
+src/js/secret/*

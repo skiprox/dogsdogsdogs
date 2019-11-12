@@ -7,6 +7,8 @@
 
 'use strict';
 
+const key = require('./../secret/gcapi');
+
 const formatGoogleCalendar = (() => {
 
     'use strict';
@@ -404,7 +406,7 @@ const formatGoogleCalendar = (() => {
     return { 
         init: function (settingsOverride) {
             var settings = {
-                calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/milan.kacurak@gmail.com/events?key=AIzaSyCR3-ptjHE-_douJsn8o20oRwkxt-zHStY',
+                calendarUrl: `https://www.googleapis.com/calendar/v3/calendars/milan.kacurak@gmail.com/events?key=${key}`,
                 past: true,
                 upcoming: true,
                 sameDayTimes: true,
