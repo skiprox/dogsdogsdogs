@@ -1,0 +1,12 @@
+.calendar {
+    .upcoming {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .date {
+        display: block;
+    }
+    ul, li + li {
+        margin-top: 1em;
+    }
+}
