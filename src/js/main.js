@@ -29,9 +29,9 @@ class Main {
 		new DogsLogo();
         if (document.body.classList.contains('calendar')) {
             GoogleCalendar.init({
-                calendarUrl: "https://www.googleapis.com/calendar/v3/calendars/newschool.edu_08s6u2811f1ag7kfd9c5jmm9ho@group.calendar.google.com/events",
+                calendarUrl: "https://calendar.google.com/calendar?cid=Y19yZWg4bTNjbTZibWV2bjVjaDVuMjc0b2lmb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
                 past: false,
-                upcomingHeading: '<h2 class="upcoming">Upcoming events</h2>',
+                upcomingHeading: '<h2 class="upcoming">upcoming events</h2>',
                 pastHeading: '',
             });
         }
