@@ -43,9 +43,11 @@
 #
 # -----------------------------------------------------------------
 
-# ignore all files starting with . or ~
-.*
+# ignore all files starting with ~
 ~*
+
+.gitconfig
+.DS_Store
 
 # ignore node/grunt dependency directories
 node_modules/
