@@ -12,7 +12,7 @@
   "dependencies": {
     "bourbon": "^4.3.4",
     "bourbon-neat": "^1.8.0",
-    "gsap": "^1.19.1",
+    "gsap": "^3.6.0",
     "reset-css": "^2.2.0"
   },
   "devDependencies": {
